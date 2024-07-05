@@ -2,7 +2,6 @@ import { GenerateBaseHeaders } from "../../base/headers.ts";
 import {
   ACTIONS_RESULT,
   PROXY_PROTOCOL,
-  PROXY_PROTOCOLS,
 } from "../../types/actions.d.ts";
 
 type ENDPOINT_TYPE =
