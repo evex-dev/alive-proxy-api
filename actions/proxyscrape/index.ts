@@ -1,8 +1,5 @@
 import { GenerateBaseHeaders } from "../../base/headers.ts";
-import {
-  ACTIONS_RESULT,
-  PROXY_PROTOCOL,
-} from "../../types/actions.d.ts";
+import { ACTIONS_RESULT, PROXY_PROTOCOL } from "../../types/actions.d.ts";
 
 type ENDPOINT_TYPE =
   `https://api.proxyscrape.com/v3/free-proxy-list/get?request=displayproxies&proxy_format=protocolipport&format=json`;
