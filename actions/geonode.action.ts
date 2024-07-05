@@ -1,8 +1,7 @@
-import { $number } from "@edamame-x/nextyping";
 import { GenerateBaseHeaders } from "../base/headers.ts";
 import { ACTIONS_RESULT, PROXY_PROTOCOLS } from "../types/actions.d.ts";
 
-type PAGE_RANGE = $number.$range<13>[number];
+type PAGE_RANGE = number;
 
 type ENDPOINT_TYPE =
   `https://proxylist.geonode.com/api/proxy-list?limit=500&page=${PAGE_RANGE}`;

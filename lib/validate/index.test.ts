@@ -18,10 +18,10 @@ const sampleData = [
 ] as PROXY_LIST;
 
 Deno.test("Validate Data Testing with success", () => {
-    const validateResult = ValidateData(sampleData);
-    assertEquals(validateResult.body, sampleData);
-    assertEquals(validateResult.message, null);
-    assertEquals(validateResult.status, "success");
+  const validateResult = ValidateData(sampleData);
+  assertEquals(validateResult.body, sampleData);
+  assertEquals(validateResult.message, null);
+  assertEquals(validateResult.status, "success");
 });
 
 const sampleData2 = [
@@ -48,7 +48,7 @@ const sampleData2 = [
     port: 5307,
     protocol: ["socks5"],
     country: "XXX",
-  }
+  },
 ] as PROXY_LIST;
 
 Deno.test("Validate Data Testing with error", () => {
@@ -56,4 +56,4 @@ Deno.test("Validate Data Testing with error", () => {
   assertEquals(validateResult.body, null);
   assertEquals(validateResult.message, "Empty data");
   assertEquals(validateResult.status, "error");
-})
+});

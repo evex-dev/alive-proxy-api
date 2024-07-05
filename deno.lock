@@ -2,15 +2,11 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@edamame-x/nextyping@^1.1.5": "jsr:@edamame-x/nextyping@1.1.5",
       "jsr:@hono/hono@^4.4.11": "jsr:@hono/hono@4.4.11",
       "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
       "jsr:@std/internal@^1.0.0": "jsr:@std/internal@1.0.1"
     },
     "jsr": {
-      "@edamame-x/nextyping@1.1.5": {
-        "integrity": "fded095617347494097fd4b8118b0d11e6d6b63a722c81763b8bd58f46504b01"
-      },
       "@hono/hono@4.4.11": {
         "integrity": "9a739ef99e0b9c5ecb1b25dc8dc4f928cb34d1a6cfdca29a1637db9cbbd660cd"
       },
@@ -62,7 +58,6 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@edamame-x/nextyping@^1.1.5",
       "jsr:@hono/hono@^4.4.11",
       "jsr:@std/assert@^0.226.0"
     ]

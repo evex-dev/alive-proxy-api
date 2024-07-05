@@ -17,13 +17,17 @@ export function ValidateData(data: PROXY_LIST): VALIDATE_RESULT {
 
     if (typeof data[i].ip !== "string") {
       continue;
-    }else if (!data[i].ip.match(/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/)) {
+    } else if (
+      !data[i].ip.match(
+        /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/,
+      )
+    ) {
       continue;
     }
 
     if (typeof data[i].port !== "number") {
       continue;
-    }else if (data[i].port < 1 || data[i].port > 65535) {
+    } else if (data[i].port < 1 || data[i].port > 65535) {
       continue;
     }
 
@@ -49,7 +53,7 @@ export function ValidateData(data: PROXY_LIST): VALIDATE_RESULT {
 
     if (typeof data[i].country !== "string") {
       continue;
-    }else if (!data[i].country.match(/^[A-Z]{2}$/)) {
+    } else if (!data[i].country.match(/^[A-Z]{2}$/)) {
       continue;
     }
 
