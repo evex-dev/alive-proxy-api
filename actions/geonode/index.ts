@@ -1,5 +1,5 @@
-import { GenerateBaseHeaders } from "../base/headers.ts";
-import { ACTIONS_RESULT, PROXY_PROTOCOLS } from "../types/actions.d.ts";
+import { GenerateBaseHeaders } from "../../base/headers.ts";
+import { ACTIONS_RESULT, PROXY_PROTOCOLS } from "../../types/actions.d.ts";
 
 type PAGE_RANGE = number;
 
