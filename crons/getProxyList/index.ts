@@ -31,12 +31,16 @@ await (async () => {
   await slowRefreshCronActionsHandler();
 })();
 
-Deno.cron("get proxy list for fast refresh", "*/25 * * * *", async () => {
+Deno.cron("get proxy list for fast refresh", {
+  minute: 30
+}, async () => {
   console.log(bgGreen("[ACTION RUNNING] Fast Refresh"));
   await fastRefreshCronActionsHandler();
 });
 
-Deno.cron("get proxy list for slow refresh", "*/50 * * * *", async () => {
+Deno.cron("get proxy list for slow refresh", {
+  hour: 2
+}, async () => {
   console.log(bgGreen("[ACTION RUNNING] Slow Refresh"));
   await slowRefreshCronActionsHandler();
 });
